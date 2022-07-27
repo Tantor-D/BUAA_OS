@@ -1,0 +1,48 @@
+
+hello.o:     file format elf32-tradbigmips
+
+Disassembly of section .text:
+
+00000000 <main>:
+   0:	27bdffe8 	addiu	sp,sp,-24
+   4:	afbe0010 	sw	s8,16(sp)
+   8:	03a0f021 	move	s8,sp
+   c:	24020002 	li	v0,2
+  10:	afc2000c 	sw	v0,12(s8)
+  14:	24020002 	li	v0,2
+  18:	afc20008 	sw	v0,8(s8)
+  1c:	00001021 	move	v0,zero
+  20:	03c0e821 	move	sp,s8
+  24:	8fbe0010 	lw	s8,16(sp)
+  28:	27bd0018 	addiu	sp,sp,24
+  2c:	03e00008 	jr	ra
+  30:	00000000 	nop
+	...
+Disassembly of section .reginfo:
+
+00000000 <.reginfo>:
+   0:	e0000004 	sc	zero,4(zero)
+	...
+Disassembly of section .pdr:
+
+00000000 <.pdr>:
+   0:	00000000 	nop
+   4:	40000000 	mfc0	zero,c0_index
+   8:	fffffff8 	sdc3	$31,-8(ra)
+	...
+  14:	00000018 	mult	zero,zero
+  18:	0000001e 	0x1e
+  1c:	0000001f 	0x1f
+Disassembly of section .comment:
+
+00000000 <.comment>:
+   0:	00474343 	0x474343
+   4:	3a202847 	xori	zero,s1,0x2847
+   8:	4e552920 	c3	0x552920
+   c:	342e302e 	ori	t6,at,0x302e
+  10:	30202844 	andi	zero,at,0x2844
+  14:	454e5820 	0x454e5820
+  18:	454c444b 	0x454c444b
+  1c:	20342e31 	addi	s4,at,11825
+  20:	20342e30 	addi	s4,at,11824
+  24:	2e302900 	sltiu	s0,s1,10496

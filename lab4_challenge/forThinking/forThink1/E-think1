@@ -1,0 +1,10 @@
+# 1 "think1.c"
+# 1 "<built-in>"
+# 1 "<command line>"
+# 1 "think1.c"
+int main() {
+ int a = 1;
+ int b = 2;
+ int c = a + 2;
+ return 0;
+}
